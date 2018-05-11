@@ -4,7 +4,7 @@
 //RGB Channel1 ={0,0,0  };//use the TimerHandler library structure
 RGB Channel1_Updater = RGB();
 
-
+// Channel1 = RGBChannel{ 0,0,0,true };
 
 /*
 
