@@ -6,8 +6,11 @@
 
 //Charles versions of handlers 
 
-#include <TimerHandler.h>
+// #include <DS3231.h> include for arduino
+
+//#include <TimerHandler.h>
 #include "Timers_definition.h"//not sure if needed
+
 #include <RGBHandler.h>
 #include "RGB_Channels_definition.h"//not sure if needed
 
@@ -462,7 +465,7 @@ void loop(void) {
 		  break;
     }
 
-	
+	//RGB_Set(Channel1);
   }
 
  
