@@ -9,6 +9,8 @@ String Val_Combined_lbl1 = "";
 String Val_Combined_lbl2 = "";
 String Val_Combined_lbl3 = "";
 
+boolean Keypad01_Active = false;
+
 int16_t label_KEYPAD[4] = { 172, 233,113,40 };
 
 

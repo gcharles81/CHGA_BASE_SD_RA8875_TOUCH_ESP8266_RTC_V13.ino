@@ -50,6 +50,8 @@ void Test_menu_update_label_val_String_NEW_A(int val) {
 
 
 			default:
+			// do nothing
+
 			break;
 
 		}
@@ -145,6 +147,10 @@ void Uboat(int Test) {
 
 	}
 
+	else {
+		Test_menu_update_label_val_String_NEW_B(Test);
+	}
+	/*
 	if (Test == 1){
 		Test_menu_update_label_val_String_NEW_B(Test);
 	}
@@ -160,6 +166,7 @@ void Uboat(int Test) {
 	if (Test == 4) {
 		Test_menu_update_label_val_String_NEW_B(Test);
 	}
+	*/
 }
 
 void BUTTON_KPD_MENU_New(int Xval, int Yval, int16_t LABLE[4]) {
@@ -400,6 +407,7 @@ void TEST_Lable_Menu_NEW(int Xval, int Yval) {
 
 		Menu_item = 1;
 		Create_Keypad_01(350, 120);
+		Keypad01_Active = true;
 		return;
 	}
 
@@ -417,6 +425,7 @@ void TEST_Lable_Menu_NEW(int Xval, int Yval) {
 
 		Menu_item = 2;
 		Create_Keypad_01(350, 120);
+		Keypad01_Active = true;
 		return;
 	}
 	else { // do nothing *
@@ -432,6 +441,7 @@ void TEST_Lable_Menu_NEW(int Xval, int Yval) {
 
 		Menu_item = 3;
 		Create_Keypad_01(350, 120);
+		Keypad01_Active = true;
 		return;
 	}
 	else { // do nothing *
