@@ -64,6 +64,9 @@
     <ClInclude Include="RGB_Channels_definition.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="keypad.cpp">

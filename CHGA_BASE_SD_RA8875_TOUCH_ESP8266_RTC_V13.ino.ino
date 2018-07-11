@@ -1,3 +1,5 @@
+// include config.h contains libraries depending on CPU type / Teensy3.6 or ARDUINO DUE
+#include "Config.h"
 
 // include the SD library:
 #include "keypad.h"
@@ -20,9 +22,9 @@
 
 
 
-#include <RA8875.h>
-//#include <Wire.h>
 
+//#include <Wire.h>
+/*
 #include "Temporary_timers.h" ////only temporary here this actually will be replaced with Timers & RGB channels handlers .h 
 
 #include <FT5206.h>
@@ -70,11 +72,9 @@ SdVolume volume;
 SdFile root;
 File commandFile;
 //File     bmpFile;
-
-
-
 boolean btn_continous_press = false;
 
+*/
 unsigned long currentMillis = 0;
 long previousMillis = 0;        // will store last time LED was updated
 
@@ -282,7 +282,7 @@ void setup()
 
 
   Serial.begin(9600);
-
+#if defined (__MK66FX1M0__)//teensy 3.6
   // set the Time library to use Teensy 3.0's RTC to keep time
   setSyncProvider(getTeensy3Time);
   if (timeStatus() != timeSet) {
@@ -290,6 +290,8 @@ void setup()
   } else {
     Serial.println("RTC has set the system time");
   }
+
+#endif
   delay(200); // Give RTC some time
 
   Serial.print("\nInitializing SD card...");
